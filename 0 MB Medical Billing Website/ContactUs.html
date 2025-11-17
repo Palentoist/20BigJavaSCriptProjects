@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact Us – MB Medical Billing</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="./Contactstyles.css">
+  <link rel="icon" href="./Assets/MB.png" type="image/x-icon">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+        <a href="#" class="logo">
+            <img src="./Assets/MB.png" alt="24-7 Consultancy Logo">
+        </a>
+        <div class="nav-links-wrapper">
+            <ul class="nav-menu">
+                <li><a href="/index.html" class="nav-link">Home</a></li>
+                <li class="dropdown mega-dropdown">
+                    <a href="#services" class="nav-link">Our Business <i class="fas fa-chevron-down"></i></a>
+                    <div class="mega-dropdown-content">
+                        <div class="mega-dropdown-inner">
+                            <div class="mega-brand">
+                                <div class="mega-logo">
+                                    <img src="./Assets/MB.png" alt="24-7">
+                                    <p>Building a Better Business World</p>
+                                </div>
+                            </div>
+                            <div class="mega-column">
+                                <h4>BPO</h4>
+                                <a href="#">Inbound Calls</a>
+                                <a href="#">Outbound Calls</a>
+                                <a href="#">Email and Chat Support</a>
+                                <a href="#">SMS Support</a>
+                            </div>
+                            <div class="mega-column">
+                                <h4>Health Care</h4>
+                                <a href="#">Medical Billing</a>
+                                <a href="#">Medical Transcriptions</a>
+                                <a href="#">Management Services</a>
+                            </div>
+                            <div class="mega-column">
+                                <h4>Digital Marketing</h4>
+                                <a href="#">Web Development</a>
+                                <a href="#">Graphics Designing</a>
+                                <a href="#">UI UX Designing</a>
+                                <a href="#">Search Engine Optimization</a>
+                                <a href="#">Social Media Marketing</a>
+                                <a href="#">Content Writing</a>
+                            </div>
+                            <div class="mega-sidebar">
+                                <a href="#" class="sidebar-link">Message from CEO</a>
+                                <a href="#" class="sidebar-link">Our Team</a>
+                                <a href="#" class="sidebar-link">Events</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="./AboutUs.html" class="nav-link">About Us</a></li>
+                <li><a href="/ContactUs.html" class="nav-link active">Contact Us</a></li>
+                <li><a href="./Careers.html" class="nav-link">Careers</a></li>
+            </ul>
+        </div>
+        <a href="./ContactUs.html" class="nav-cta">Contact Us</a>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</nav>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="contact-form-wrapper">
+            <form id="contactForm" class="contact-form" autocomplete="off">
+              <select id="service" name="service" required>
+                <option value="">Please select service ...</option>
+                <option value="bpo">BPO Services</option>
+                <option value="healthcare">Healthcare Solutions</option>
+                <option value="digital">Digital Marketing</option>
+                <option value="software">Software Development</option>
+                <option value="medical-billing">Medical Billing</option>
+              </select>
+
+              <div class="form-row">
+                <input id="name" name="name" type="text" placeholder="Your Name ..." required />
+                <input id="email" name="email" type="email" placeholder="Your Email ..." required />
+              </div>
+
+              <div class="phone-input-wrapper">
+                <span class="phone-prefix">🇵🇰 0301 2345678</span>
+                <input id="phone" name="phone" type="tel" placeholder="" />
+              </div>
+
+              <input id="subject" name="subject" type="text" placeholder="Enter Subject ..." />
+
+              <textarea id="message" name="message" rows="5" placeholder="Project Description" required></textarea>
+
+              <button id="submitBtn" type="submit">
+                Submit
+                <i class="fas fa-arrow-right"></i>
+              </button>
+
+              <p id="formStatus" class="form-status" aria-live="polite"></p>
+            </form>
+          </div>
+
+          <div class="hero-text">
+            <h1>Let's get in <span>touch!</span></h1>
+            <p>
+              Thank you for considering MB Medical Billing for your medical billing needs. 
+              We are here to answer any questions you may have and provide you with more 
+              information about our services.
+            </p>
+            <div class="social-links">
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-info">
+      <div class="container">
+        <div class="info-grid">
+          <div class="info-col">
+            <h3>Contact Details</h3>
+            <p><strong>Phone:</strong> (051) 2716866</p>
+            <p><strong>Email:</strong> info@MBBilling.com</p>
+            <p>
+              <strong>Address:</strong><br>
+              Plot # D/164, Ground Floor, Al-Jadeed Business Center, 6th Road,
+              Adjacent to Total Petrol Pump, Satellite Town, Rawalpindi.
+            </p>
+            <p><a target="_blank" rel="noopener" href="https://maps.app.goo.gl">Open in Google Maps</a></p>
+          </div>
+
+          <div class="info-col">
+            <h3>Other Offices</h3>
+            <div class="office">
+              <strong>Second Office</strong>
+              <p>Ground Floor, Alfalah Center, 100D, opposite Butt Karahi, D Block Satellite Town, Rawalpindi, Punjab 46300</p>
+            </div>
+            <div class="office">
+              <strong>Third Office</strong>
+              <p>3rd floor 20-B North Star Plaza Rehmanabad, Murree Rd, Block B Satellite Town, Rawalpindi, 46000</p>
+            </div>
+            <div class="office">
+              <strong>Fourth Office</strong>
+              <p>Basement Plot No, 8-D 6th Rd, Satellite Block D Town, Rawalpindi, Punjab 46300</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services">
+      <div class="container">
+        <h3>Services</h3>
+        <ul class="services-list">
+          <li>BPO – Inbound Calls</li>
+          <li>Outbound Calls</li>
+          <li>Email and Chat Support</li>
+          <li>SMS Support</li>
+          <li>Medical Billing</li>
+          <li>Medical Transcriptions</li>
+          <li>Web Development</li>
+          <li>SEO Services</li>
+          <li>Social Media Marketing</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+   <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>BPO</h3>
+                    <ul>
+                        <li><a href="#">Inbound Calls</a></li>
+                        <li><a href="#">Outbound Calls</a></li>
+                        <li><a href="#">Email and Chat Support</a></li>
+                        <li><a href="#">SMS Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Health Care</h3>
+                    <ul>
+                        <li><a href="#">Medical Billing</a></li>
+                        <li><a href="#">Medical Transcriptions</a></li>
+                        <li><a href="#">Management Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Digital Marketing</h3>
+                    <ul>
+                        <li><a href="#">WEB Development</a></li>
+                        <li><a href="#">Graphic Designing</a></li>
+                        <li><a href="#">UI UX Designing</a></li>
+                        <li><a href="#">Search Engine Optimization</a></li>
+                        <li><a href="#">Social Media Marketing</a></li>
+                        <li><a href="#">Content Writing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column contact-column">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><a href="tel:+923217216866"><i class="fas fa-phone"></i> (051) 2716866</a></li>
+                        <li><a href="mailto:info@MBBilling.com"><i class="fas fa-envelope"></i> info@MBBilling.com</a></li>
+                        <li class="address">
+                            <i class="fas fa-map-marker-alt"></i> 
+                            <span>Plot # D/164, Ground Floor, Al-Jadeed Business Center, 6th Road, Adjacent to Total Petrol Pump, Satellite Town, Rawalpindi.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>Copyrights © 2022 All Rights Reserved by MB Medical Billing</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+  <script src="./Contactapp.js"></script>
+</body>
+</html>

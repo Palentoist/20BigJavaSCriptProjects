@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MB Medical Billing</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="./Assets/MB.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <img src="./Assets/MB.png" alt="MB Logo">
+            </a>
+            <div class="nav-links-wrapper">
+                <ul class="nav-menu">
+                    <li><a href="/index.html" class="nav-link active">Home</a></li>
+                    <li class="dropdown mega-dropdown">
+                        <a href="#services" class="nav-link">Our Business <i class="fas fa-chevron-down"></i></a>
+                        <div class="mega-dropdown-content">
+                            <div class="mega-dropdown-inner">
+                                <div class="mega-brand">
+                                    <div class="mega-logo">
+                                        <img src="./Assets/MB.png" alt="MB Medical Billing">
+                                        <p>Building a Better Business World</p>
+                                    </div>
+                                </div>
+                                <div class="mega-column">
+                                    <h4>BPO</h4>
+                                    <a href="#">Inbound Calls</a>
+                                    <a href="#">Outbound Calls</a>
+                                    <a href="#">Email and Chat Support</a>
+                                    <a href="#">SMS Support</a>
+                                </div>
+                                <div class="mega-column">
+                                    <h4>Health Care</h4>
+                                    <a href="#">Medical Billing</a>
+                                    <a href="#">Medical Transcriptions</a>
+                                    <a href="#">Management Services</a>
+                                </div>
+                                <div class="mega-column">
+                                    <h4>Digital Marketing</h4>
+                                    <a href="#">Web Development</a>
+                                    <a href="#">Graphics Designing</a>
+                                    <a href="#">UI UX Designing</a>
+                                    <a href="#">Search Engine Optimization</a>
+                                    <a href="#">Social Media Marketing</a>
+                                    <a href="#">Content Writing</a>
+                                </div>
+                                <div class="mega-sidebar">
+                                    <a href="#" class="sidebar-link">Message from CEO</a>
+                                    <a href="#" class="sidebar-link">Our Team</a>
+                                    <a href="#" class="sidebar-link">Events</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="./AboutUs.html" class="nav-link">About Us</a></li>
+                    <li><a href="/ContactUs.html" class="nav-link">Contact Us</a></li>
+                    <li><a href="./Careers.html" class="nav-link">Careers</a></li>
+                </ul>
+            </div>
+            <a href="./ContactUs.html" class="nav-cta">Contact Us</a>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>We Are Serving Round The Clock</h1>
+            
+            <div class="hero-buttons">
+            
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+   <!-- Partners Scrolling Strip -->
+<section class="partner-strip">
+    <div class="partner-scroll">
+        <div class="partner-item"><img src="https://via.placeholder.com/120x60?text=Logo+1" alt="Partner Logo"></div>
+        <div class="partner-item"><img src="https://via.placeholder.com/120x60?text=Logo+2" alt="Partner Logo"></div>
+        <div class="partner-item"><img src="https://via.placeholder.com/120x60?text=Logo+3" alt="Partner Logo"></div>
+        <div class="partner-item"><img src="https://via.placeholder.com/120x60?text=Logo+4" alt="Partner Logo"></div>
+        <div class="partner-item"><img src="https://via.placeholder.com/120x60?text=Logo+5" alt="Partner Logo"></div>
+        <!-- Duplicate logos for infinite scroll -->
+        <div class="partner-item"><img src="https://via.placeholder.com/120x60?text=Logo+1" alt="Partner Logo"></div>
+        <div class="partner-item"><img src="https://via.placeholder.com/120x60?text=Logo+2" alt="Partner Logo"></div>
+        <div class="partner-item"><img src="https://via.placeholder.com/120x60?text=Logo+3" alt="Partner Logo"></div>
+        <div class="partner-item"><img src="https://via.placeholder.com/120x60?text=Logo+4" alt="Partner Logo"></div>
+        <div class="partner-item"><img src="https://via.placeholder.com/120x60?text=Logo+5" alt="Partner Logo"></div>
+    </div>
+</section>
+
+
+    <!-- Success Stories Section -->
+    <section id="success-stories" class="success-stories">
+        <div class="container">
+            <div class="section-header">
+                <h2>Success <span class="highlight">Stories</span></h2>
+                <p class="section-description">Gain Access to Invaluable Wisdom!</p>
+                <a href="#" class="view-all">View All Episodes <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="stories-grid">
+                <!-- Main Featured Story -->
+                <div class="story-card featured">
+                    <div class="story-image">
+                        <img src="./Images/Businessman.webp" alt="Naeem Abbas">
+                    </div>
+                </div>
+
+                <!-- Smaller Stories -->
+                <div class="story-card">
+                    <div class="story-image">
+                        <img src="./Images/GlassesBusinessman.jpg" alt="Danish Athar">
+                    </div>
+                </div>
+
+                <div class="story-card">
+                    <div class="story-image">
+                        <img src="./Images/blackbusinessman.webp" alt="My Journey">
+                    </div>
+                </div>
+
+                <div class="story-card">
+                    <div class="story-image">
+                        <img src="./Images/calculatorbusinessman.jpg" alt="Excellence">
+                    </div>
+                </div>
+
+                <div class="story-card">
+                    <div class="story-image">
+                        <img src="./Images/laptopbusinessman.jpg" alt="Changing Mindsets">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Business Solutions Section -->
+    <section id="services" class="business-solutions">
+        <div class="container">
+            <h2>Optimized Business <span class="highlight">Solutions</span></h2>
+            <p class="section-description">Our comprehensive suite of BPO, healthcare, and digital marketing solutions
+                provides seamless and optimized services that elevate our clients' operations. With over a decade of
+                experience and a proven track record of success, we strive to inspire and empower our clients to achieve
+                their goals and drive sustainable growth.</p>
+
+            <div class="services-container">
+                <!-- BPO Card -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Business Process Outsourcing</h3>
+                    <p>Our BPO call center department provides top-notch customer support.</p>
+                    <ul>
+                        <li><i class="fas fa-arrow-right listp"></i> Inbound Calls</li>
+                        <li><i class="fas fa-arrow-right listp "></i> Outbound Calls</li>
+                        <li><i class="fas fa-arrow-right listp "></i> Email and Chat Support</li>
+                        <li><i class="fas fa-arrow-right listp "></i> SMS Support</li>
+                    </ul>
+                </div>
+
+                <!-- Healthcare Card -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Health Care</h3>
+                    <p>Managing patient billing and processing insurance claims are part of it.</p>
+                    <ul>
+                        <li><i class="fas fa-arrow-right listp"></i> Medical Billing</li>
+                        <li><i class="fas fa-arrow-right listp"></i> Medical Transcription</li>
+                        <li><i class="fas fa-arrow-right listp"></i> Management Services</li>
+                    </ul>
+                </div>
+
+                <!-- Digital Marketing Card -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Digital Marketing</h3>
+                    <p>Our digital marketing team helps businesses reach their target audience.</p>
+                    <ul>
+                        <li><i class="fas fa-arrow-right listp"></i> Graphic Designing</li>
+                        <li><i class="fas fa-arrow-right listp"></i> Search Engine Optimization</li>
+                        <li><i class="fas fa-arrow-right listp"></i> Social Media Marketing</li>
+                        <li><i class="fas fa-arrow-right listp"></i> Content Writing</li>
+                    </ul>
+                </div>
+
+                <!-- Software Development Card -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Software Development</h3>
+                    <p>Empowering Your Vision with Expert Software/Web Development Services.</p>
+                    <ul>
+                        <li><i class="fas fa-arrow-right listp"></i> Web Development</li>
+                        <li><i class="fas fa-arrow-right listp"></i> UI/UX Designing</li>
+                        <li><i class="fas fa-arrow-right listp"></i> Wordpress Development</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Section -->
+    <section class="leadership">
+        <div class="container">
+            <div class="section-title">
+                <h2>Meet Our Leadership</h2>
+                <p>At MB Medical Billing, we take pride in our dedicated and experienced leadership team, driving our
+                    organization's success and innovation. Our leaders bring a wealth of expertise and a shared
+                    commitment to our mission, vision, and values.</p>
+            </div>
+            <div class="leadership-grid">
+                <div class="leader-card">
+                    <div class="leader-image">
+                        <img src="./LeaderImages/buzz.jpg" alt="Naeem Abbas">
+                    </div>
+                    <div class="leader-info">
+                        <h3>Sheeren Mizari</h3>
+                        <p class="leader-title">CEO, Founder</p>
+                        <p class="leader-description">Mr. Naeem excels in startups, training, quality control and team
+                            building. He leads MB Medical Billing, delivering innovative solutions to national
+                            enterprises.</p>
+                        <div class="leader-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="leader-card">
+                    <div class="leader-image">
+                        <img src="./LeaderImages/hasmukh.jpg" alt="Huma Naeem">
+                    </div>
+                    <div class="leader-info">
+                        <h3>Parveen Shakir</h3>
+                        <p class="leader-title">Chief Financial Officer</p>
+                        <p class="leader-description">The Chief Financial Officer (CFO) plays a pivotal role in the
+                            financial management of MB Medical Billing, particularly in financial management and strategic
+                            decision-making.</p>
+                        <div class="leader-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="leader-card">
+                    <div class="leader-image">
+                        <img src="./LeaderImages/professional.webp" alt="Danish Ather">
+                    </div>
+                    <div class="leader-info">
+                        <h3>Mirza Galib</h3>
+                        <p class="leader-title">Chief Operating Officer</p>
+                        <p class="leader-description">He excels in operational management, team leadership, and
+                            strategic execution to drive the organization's success. Besides he is an excellent performer in the team.</p>
+                        <div class="leader-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Process Section -->
+    <section id="process" class="process">
+        <div class="container">
+            <div class="process-header">
+                <div class="process-title-section">
+                    <h2>Our Roadmap to <span class="highlight">Results</span></h2>
+                    <p>Our process is a journey of discovery, collaboration, and innovation. We work with our clients to
+                        understand their needs and their problems. Then, we create special solutions to help them reach
+                        their goals.</p>
+                    <a href="#contact" class="book-meeting-btn">Book A Meeting <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="process-cards">
+                    <div class="process-card">
+                        <div class="card-icon blue">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3>Uncovering Your Vision</h3>
+                        <p>At MB Medical Billing, we're passionate about helping businesses succeed. That's why we start by
+                            deeply understanding your unique needs and challenges.</p>
+                    </div>
+                    <div class="process-card">
+                        <div class="card-icon blue">
+                            <i class="fas fa-cog"></i>
+                        </div>
+                        <h3>Crafting Solutions</h3>
+                        <p>Our team of experts will carefully learn about your business needs and goals. After that, we'll
+                            explore various ideas and options to find the best solutions.</p>
+                    </div>
+                    <div class="process-card">
+                        <div class="card-icon blue">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>Delivering Success</h3>
+                        <p>At MB Medical Billing, the magic happens in the development and implementation phase. This is where
+                            we take your vision and turn it into a reality.</p>
+                    </div>
+                    <div class="process-card">
+                        <div class="card-icon blue">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3>Empowering Innovation</h3>
+                        <p>Encourage a culture of innovation where employees are empowered to propose new ideas and
+                            solutions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision Section -->
+    <section class="vision">
+        <div class="vision-content">
+            <h2>MB's Vision for the Future!</h2>
+            <p>At MB Medical Billing, we are more than just a team of experts. We are a team of visionaries passionate
+                about building a better tomorrow. Technology and innovation can solve important problems in the world.
+                We use our knowledge and skills to assist our clients in reaching their goals and making a positive
+                difference</p>
+            <p><strong>Our goals for the future include:</strong></p>
+            <ul class="vision-list">
+                <li>Expanding our expertise and reaching new clients so that we can help more people benefit from
+                    our services.</li>
+                <li>Investing in new technologies and capabilities so that we can deliver even better results for our
+                    clients.</li>
+                <li>Building a broader team of talented, dedicated professionals passionate about making a difference.
+                </li>
+                <li>We believe that together, we can create a brighter future for all.</li>
+            </ul>
+            
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements-section">
+        <div class="container">
+            <div class="achievements-wrapper">
+                <div class="achievements-header">
+                    <h2>Achievements & <span class="highlight">Awards</span></h2>
+                </div>
+                <div class="awards-container">
+                    <div class="award-item">
+                        <img src="./Assets/award1.svg" alt="Award 1" class="award-logo">
+                    </div>
+                    <div class="award-item">
+                        <img src="./Assets/award2.svg" alt="Award 2" class="award-logo">
+                    </div>
+                    <div class="award-item">
+                        <img src="./Assets/award3.svg" alt="Award 3" class="award-logo">
+                    </div>
+                    <div class="award-item">
+                        <img src="./Assets/award4.svg" alt="Award 4" class="award-logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-form-container">
+                    <h2>Get Ready To <span class="highlight">Started?</span></h2>
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="subject" name="subject" placeholder="Subject">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" placeholder="Project Description"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <img src="./Assets/google-icon.svg" alt="Google" class="google-icon">
+                            <div class="rating">
+                                <span class="rating-score">4.8</span>
+                                <div class="stars">★★★★★</div>
+                                <span class="review-count">reviews</span>
+                            </div>
+                        </div>
+                        <div class="reviewer">
+                            <img src="./Assets/avatar.svg" alt="Reviewer" class="avatar">
+                            <div class="reviewer-info">
+                                <h4>Verified customer review</h4>
+                                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua."</p>
+                                <div class="review-date">October 2023</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <div class="faq-header">
+                <h2>Common <span class="highlight">Questions</span></h2>
+                <p>Explore our frequently asked questions to find quick answers about our services, processes, and how
+                    we can help your business grow.</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item active">
+                    <div class="faq-question">
+                        <span class="faq-number">01</span>
+                        <h3>What kind of businesses do you typically work with?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We work with businesses of all sizes across various industries. Our clients range from small
+                            startups to large enterprises in healthcare, technology, finance, retail, and more. We
+                            tailor our services to meet the specific needs of each business.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="faq-number">02</span>
+                        <h3>How does MB Medical Billing enhance business operations?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We enhance business operations through our comprehensive BPO services, healthcare solutions,
+                            and digital marketing strategies. Our team works closely with you to identify areas for
+                            improvement and implement efficient solutions.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="faq-number">03</span>
+                        <h3>How does MB Medical Billing ensure the confidentiality and security of client data?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We implement robust security measures including encryption, secure data storage, regular
+                            security audits, and strict access controls. All our staff sign confidentiality agreements,
+                            and we comply with international data protection regulations.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="faq-number">04</span>
+                        <h3>Do you provide references or case studies?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we can provide references and case studies upon request. Our success stories showcase
+                            how we've helped businesses achieve their goals through our various services.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="faq-number">05</span>
+                        <h3>How do you measure success?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We measure success through key performance indicators (KPIs) tailored to each project. These
+                            may include metrics like response times, conversion rates, customer satisfaction scores, and
+                            ROI. We provide regular reports to track progress.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="faq-number">06</span>
+                        <h3>Do you work with clients located in different regions or countries?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we work with clients globally. Our team is equipped to handle different time zones and
+                            cultural considerations, ensuring seamless communication and service delivery regardless of
+                            location.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>BPO</h3>
+                    <ul>
+                        <li><a href="#">Inbound Calls</a></li>
+                        <li><a href="#">Outbound Calls</a></li>
+                        <li><a href="#">Email and Chat Support</a></li>
+                        <li><a href="#">SMS Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Health Care</h3>
+                    <ul>
+                        <li><a href="#">Medical Billing</a></li>
+                        <li><a href="#">Medical Transcriptions</a></li>
+                        <li><a href="#">Management Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Digital Marketing</h3>
+                    <ul>
+                        <li><a href="#">WEB Development</a></li>
+                        <li><a href="#">Graphic Designing</a></li>
+                        <li><a href="#">UI UX Designing</a></li>
+                        <li><a href="#">Search Engine Optimization</a></li>
+                        <li><a href="#">Social Media Marketing</a></li>
+                        <li><a href="#">Content Writing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column contact-column">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><a href="tel:+923217216866"><i class="fas fa-phone"></i> (051) 2716866</a></li>
+                        <li><a href="mailto:info@MBBilling.com"><i class="fas fa-envelope"></i> info@MBBilling.com</a></li>
+                        <li class="address">
+                            <i class="fas fa-map-marker-alt"></i> 
+                            <span>Plot # D/164, Ground Floor, Al-Jadeed Business Center, 6th Road, Adjacent to Total Petrol Pump, Satellite Town, Rawalpindi.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>Copyrights © 2022 All Rights Reserved by MB Medical Billing</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./scripts.js"></script>
+</body>
+
+</html>

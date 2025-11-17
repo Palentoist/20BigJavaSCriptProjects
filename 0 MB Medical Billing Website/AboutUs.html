@@ -1,0 +1,860 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About Us – MB Medical Billing</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" href="./Assets/MB.png" type="image/x-icon">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #ffffff;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: #1b1b1b;
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 56px;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 24px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #cccccc;
+      line-height: 1.8;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    /* About Section */
+    .about-section {
+      padding: 80px 0;
+    }
+
+    .about-content {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .about-content h2 {
+      font-size: 36px;
+      font-weight: 700;
+      color: #000;
+      margin-bottom: 24px;
+    }
+
+    .about-content p {
+      font-size: 16px;
+      color: #666;
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+
+    .ceo-signature {
+      margin-top: 30px;
+      font-style: italic;
+      color: #D4AF37;
+      font-weight: 600;
+    }
+
+    /* Three Pillars Section */
+    .pillars-section {
+      background: white;
+      padding: 80px 0;
+    }
+
+    .pillars-section h2 {
+      font-size: 32px;
+      font-weight: 700;
+      color: #000;
+      margin-bottom: 8px;
+    }
+
+    .pillars-section h2 span {
+      color: #D4AF37;
+    }
+
+    .pillars-subtitle {
+      color: #666;
+      font-size: 15px;
+      margin-bottom: 50px;
+      line-height: 1.6;
+      max-width: 600px;
+    }
+
+    .pillars-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .pillar-card {
+      background: white;
+      border: 2px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 40px 30px;
+      transition: all 0.3s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .pillar-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 80px;
+      height: 80px;
+      background: #525251;
+      border-bottom-left-radius: 100%;
+      opacity: 0.9;
+    }
+
+    .pillar-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(82, 82, 81, 0.15);
+      border-color: #525251;
+    }
+
+    .pillar-icon {
+      font-size: 42px;
+      color: #525251;
+      margin-bottom: 20px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .pillar-card h3 {
+      font-size: 22px;
+      font-weight: 700;
+      color: #000;
+      margin-bottom: 16px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .pillar-card p {
+      font-size: 14px;
+      color: #666;
+      line-height: 1.7;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Stats Section */
+    .stats-section {
+      background: #272727;
+      padding: 80px 0;
+      color: white;
+    }
+
+    .stats-section h2 {
+      font-size: 36px;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 40px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .stat-card {
+      text-align: center;
+    }
+
+    .stat-number {
+      font-size: 56px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      display: block;
+    }
+
+    .stat-label {
+      font-size: 16px;
+      font-weight: 500;
+      opacity: 0.95;
+    }
+
+    /* Solutions Section */
+    .solutions-section {
+      padding: 80px 0;
+    }
+
+    .solutions-section h2 {
+      font-size: 36px;
+      font-weight: 700;
+      color: #000;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+
+    .solutions-subtitle {
+      text-align: center;
+      color: #666;
+      font-size: 16px;
+      line-height: 1.8;
+      max-width: 900px;
+      margin: 0 auto 60px;
+    }
+
+    .solutions-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .solution-card {
+      background: white;
+      border: 2px solid #f0f0f0;
+      border-radius: 8px;
+      padding: 40px;
+      transition: all 0.3s;
+    }
+
+    .solution-card:hover {
+      border-color: #D4AF37;
+      box-shadow: 0 10px 30px rgba(212, 175, 55, 0.1);
+    }
+
+    .solution-card h3 {
+      font-size: 24px;
+      font-weight: 700;
+      color: #000;
+      margin-bottom: 16px;
+    }
+
+    .solution-card p {
+      font-size: 15px;
+      color: #666;
+      line-height: 1.7;
+      margin-bottom: 24px;
+    }
+
+    .read-more {
+      color: #D4AF37;
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: gap 0.3s;
+    }
+
+    .read-more:hover {
+      gap: 12px;
+    }
+
+    /* Awards Section */
+    .awards-section {
+      background: #f8f9fa;
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    .awards-section h2 {
+      font-size: 36px;
+      font-weight: 700;
+      color: #000;
+      margin-bottom: 16px;
+    }
+
+    .awards-subtitle {
+      font-size: 18px;
+      color: #666;
+      margin-bottom: 60px;
+    }
+
+    .awards-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 40px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .award-item {
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    }
+
+    .award-icon {
+      font-size: 48px;
+      margin-bottom: 16px;
+    }
+
+    /* CTA Section */
+    .cta-section {
+      background: #424242;
+      padding: 80px 0;
+      text-align: center;
+      color: white;
+    }
+
+    .cta-section h2 {
+      font-size: 42px;
+      font-weight: 700;
+      margin-bottom: 24px;
+    }
+
+    .rating {
+      font-size: 56px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .rating-text {
+      font-size: 16px;
+      opacity: 0.95;
+    }
+
+    /* Footer */
+    .site-footer {
+      background: #1a1a1a;
+      color: #fff;
+      padding: 30px 0;
+      text-align: center;
+    }
+
+    .site-footer p {
+      margin: 0;
+      font-size: 14px;
+      opacity: 0.8;
+    }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .leadership-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .leader-image-wrapper {
+        max-width: 400px;
+        margin: 0 auto;
+      }
+
+      .pillars-grid,
+      .solutions-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .awards-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .main-nav {
+        display: none;
+      }
+
+      .hero h1 {
+        font-size: 36px;
+      }
+
+      .hero p,
+      .about-content p {
+        font-size: 16px;
+      }
+
+      .about-content h2,
+      .pillars-section h2,
+      .solutions-section h2,
+      .awards-section h2 {
+        font-size: 28px;
+      }
+
+      .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .stat-number {
+        font-size: 42px;
+      }
+
+      .cta-section h2 {
+        font-size: 32px;
+      }
+
+      .rating {
+        font-size: 42px;
+      }
+    }
+
+    #leadershipimage
+    {
+      height: 510px;
+    }
+
+    .leader-placeholder
+    {
+      padding: 10px;
+      display: inline-block;
+      border: 4px solid black;
+    }
+  </style>
+</head>
+<body>
+   <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <img src="./Assets/MB.png" alt="24-7 Consultancy Logo">
+            </a>
+            <div class="nav-links-wrapper">
+                <ul class="nav-menu">
+                    <li><a href="/index.html" class="nav-link">Home</a></li>
+                    <li class="dropdown mega-dropdown">
+                        <a href="#services" class="nav-link">Our Business <i class="fas fa-chevron-down"></i></a>
+                        <div class="mega-dropdown-content">
+                            <div class="mega-dropdown-inner">
+                                <div class="mega-brand">
+                                    <div class="mega-logo">
+                                        <img src="./Assets/MB.png" alt="24-7">
+                                        <p>Building a Better Business World</p>
+                                    </div>
+                                </div>
+                                <div class="mega-column">
+                                    <h4>BPO</h4>
+                                    <a href="#">Inbound Calls</a>
+                                    <a href="#">Outbound Calls</a>
+                                    <a href="#">Email and Chat Support</a>
+                                    <a href="#">SMS Support</a>
+                                </div>
+                                <div class="mega-column">
+                                    <h4>Health Care</h4>
+                                    <a href="#">Medical Billing</a>
+                                    <a href="#">Medical Transcriptions</a>
+                                    <a href="#">Management Services</a>
+                                </div>
+                                <div class="mega-column">
+                                    <h4>Digital Marketing</h4>
+                                    <a href="#">Web Development</a>
+                                    <a href="#">Graphics Designing</a>
+                                    <a href="#">UI UX Designing</a>
+                                    <a href="#">Search Engine Optimization</a>
+                                    <a href="#">Social Media Marketing</a>
+                                    <a href="#">Content Writing</a>
+                                </div>
+                                <div class="mega-sidebar">
+                                    <a href="#" class="sidebar-link">Message from CEO</a>
+                                    <a href="#" class="sidebar-link">Our Team</a>
+                                    <a href="#" class="sidebar-link">Events</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="./AboutUs.html" class="nav-link active">About Us</a></li>
+                    <li><a href="/ContactUs.html" class="nav-link">Contact Us</a></li>
+                    <li><a href="./Careers.html" class="nav-link">Careers</a></li>
+                </ul>
+            </div>
+            <a href="./ContactUs.html" class="nav-cta">Contact Us</a>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <h1>About Us</h1>
+        <p>
+          We offer a wide range of services, from BPO to digital marketing, to help businesses of all sizes grow and thrive. 
+          Founded in 2020, MB Medical Billing is a team of experienced and passionate professionals committed to providing our 
+          clients with the highest service and support. We understand the challenges businesses face in the digital age, and 
+          we are here to help them overcome those challenges and achieve their goals.
+        </p>
+      </div>
+    </section>
+
+    <!-- Leadership Section -->
+    <section class="about-section">
+      <div class="container">
+        <div class="leadership-grid">
+          <div class="leader-image-wrapper">
+            <div class="leader-placeholder">
+              <img id="leadershipimage" src="./Images/Businessman.webp" alt="">
+            </div>
+          </div>
+          <div class="about-content">
+            <h2>Leadership <span>Perspective</span></h2>
+            <p>
+              At MB Medical Billing, every business has the potential to soar. That's why we're dedicated to providing our clients 
+              with the highest quality outsourced business services backed by a team of skilled and passionate experts. We specialize 
+              in a wide range of solutions, from medical billing to digital marketing to branding. But no matter what your specific 
+              needs are, we're here to help you achieve your business goals.
+            </p>
+            <p>
+              Innovation, efficiency, and customer satisfaction are our core values. We apply them to everything we do, from the way 
+              we develop our solutions to the way we interact with our clients. We're proud that our clients entrust us to manage 
+              their critical but non-core tasks, enabling them to focus on their core competencies. Our ultimate goal is to reduce 
+              their workload and deliver outstanding outcomes that go above and beyond their expectations.
+            </p>
+            <p class="ceo-signature">
+              Meer Danish <span class="ceo-title">- Founder & CEO</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Three Pillars Section -->
+    <section class="pillars-section">
+      <div class="container">
+        <h2>Three Pillars of <span>MB</span></h2>
+        <p class="pillars-subtitle">
+          At MB Medical Billing, we have three guiding principles that we believe are essential to our success: 
+          be curious, be empathetic, and keep promises.
+        </p>
+        <div class="pillars-grid">
+          <div class="pillar-card">
+            <div class="pillar-icon">
+              <i class="fas fa-lightbulb"></i>
+            </div>
+            <h3>Curiosity</h3>
+            <p>
+              We are committed to providing our clients with the highest quality of service and support. By being curious, 
+              we can better understand our client's needs and provide them with tailored solutions that meet their requirements.
+            </p>
+          </div>
+          <div class="pillar-card">
+            <div class="pillar-icon">
+              <i class="fas fa-heart"></i>
+            </div>
+            <h3>Empathy</h3>
+            <p>
+              At MB Medical Billing, empathy is the key to personalized service. We understand that every client is unique, 
+              with their own challenges and goals. By prioritizing empathy, we gain a deeper understanding of their perspectives.
+            </p>
+          </div>
+          <div class="pillar-card">
+            <div class="pillar-icon">
+              <i class="fas fa-handshake"></i>
+            </div>
+            <h3>Honoring Our Word</h3>
+            <p>
+              We strive to always follow through on our commitments because we know that our clients can rest assured that 
+              we will always deliver what we promise on time and to the highest standard.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+      <div class="container">
+        <h2>What Sets Us Apart?</h2>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <span class="stat-number" data-target="250">0</span>
+            <div class="stat-label">Employees</div>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-target="4">0</span>
+            <div class="stat-label">Years in business</div>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-target="100">0</span>
+            <div class="stat-label">Clients Trust Us</div>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-target="99">0</span>
+            <div class="stat-label">% Accuracy</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section class="solutions-section">
+      <div class="container">
+        <h2>Our Customized Solutions</h2>
+        <p class="solutions-subtitle">
+          MB Medical Billing - Your partner in growth. We specialize in providing top-notch business process outsourcing (BPO) 
+          services, including expert healthcare solutions, and effective digital marketing strategies. Let us take care of 
+          your non-core business activities, while you focus on your core strengths and drive your business forward.
+        </p>
+        <div class="solutions-grid">
+          <div class="solution-card">
+            <h3>Inbound Calls</h3>
+            <p>
+              Inbound call centers are essential for providing excellent customer service. MB Medical Billing can help you 
+              improve your customer service by providing inbound call center responsive, efficient, and effective services.
+            </p>
+            <a href="#" class="read-more">
+              Read More
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+          <div class="solution-card">
+            <h3>Outbound Calls</h3>
+            <p>
+              Outbound call centers can be a great way to reach new customers and grow your business. However, outsourcing 
+              your outbound call services to MB Medical Billing can be a more cost-effective and efficient solution.
+            </p>
+            <a href="#" class="read-more">
+              Read More
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+          <div class="solution-card">
+            <h3>Email and Chat Support</h3>
+            <p>
+              MB Medical Billing can help you to create and manage email lists and chat platforms. They can also help you develop 
+              and implement marketing strategies that use email and chat to engage customers and drive sales.
+            </p>
+            <a href="#" class="read-more">
+              Read More
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+          <div class="solution-card">
+            <h3>SMS Support</h3>
+            <p>
+              Email lists and chat platforms are essential for engaging customers in today's business world. Email lists can 
+              be used to send targeted marketing messages, while chat platforms can be used to provide real-time customer support.
+            </p>
+            <a href="#" class="read-more">
+              Read More
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section class="awards-section">
+      <div class="container">
+        <h2>Achievements & Awards</h2>
+        <p class="awards-subtitle">Our Team's Wins in a Collaborative Environment</p>
+        <div class="awards-grid">
+          <div class="award-item">
+            <div class="award-icon"><img src="./Assets/award1.svg" alt=""></div>
+          </div>
+          <div class="award-item">
+            <div class="award-icon"><img src="./Assets/award2.svg" alt=""></div>
+          </div>
+          <div class="award-item">
+            <div class="award-icon"><img src="./Assets/award3.svg" alt=""></div>
+          </div>
+          <div class="award-item">
+            <div class="award-icon"><img src="./Assets/award4.svg" alt=""></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-form-container">
+                    <h2>Get Ready To <span class="highlight">Started?</span></h2>
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="subject" name="subject" placeholder="Subject">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" placeholder="Project Description"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <img src="./Assets/google-icon.svg" alt="Google" class="google-icon">
+                            <div class="rating">
+                                <span class="rating-score">4.8</span>
+                                <div class="stars">★★★★★</div>
+                                <span class="review-count">reviews</span>
+                            </div>
+                        </div>
+                        <div class="reviewer">
+                            <img src="./Assets/avatar.svg" alt="Reviewer" class="avatar">
+                            <div class="reviewer-info">
+                                <h4>Verified customer review</h4>
+                                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua."</p>
+                                <div class="review-date">October 2023</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="container">
+        <h2>Get Ready To Started?</h2>
+        <div class="rating">4.8</div>
+        <p class="rating-text">Based on 50 Clutch Reviews</p>
+      </div>
+    </section>
+  </main>
+
+   <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>BPO</h3>
+                    <ul>
+                        <li><a href="#">Inbound Calls</a></li>
+                        <li><a href="#">Outbound Calls</a></li>
+                        <li><a href="#">Email and Chat Support</a></li>
+                        <li><a href="#">SMS Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Health Care</h3>
+                    <ul>
+                        <li><a href="#">Medical Billing</a></li>
+                        <li><a href="#">Medical Transcriptions</a></li>
+                        <li><a href="#">Management Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Digital Marketing</h3>
+                    <ul>
+                        <li><a href="#">WEB Development</a></li>
+                        <li><a href="#">Graphic Designing</a></li>
+                        <li><a href="#">UI UX Designing</a></li>
+                        <li><a href="#">Search Engine Optimization</a></li>
+                        <li><a href="#">Social Media Marketing</a></li>
+                        <li><a href="#">Content Writing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column contact-column">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><a href="tel:+923217216866"><i class="fas fa-phone"></i> (051) 2716866</a></li>
+                        <li><a href="mailto:info@MBMedicalBilling.com"><i class="fas fa-envelope"></i> info@MBBilling.com</a></li>
+                        <li class="address">
+                            <i class="fas fa-map-marker-alt"></i> 
+                            <span>Plot # D/164, Ground Floor, Al-Jadeed Business Center, 6th Road, Adjacent to Total Petrol Pump, Satellite Town, Rawalpindi.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>Copyrights © 2022 All Rights Reserved by MB Medical Billing</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+  <script>
+    // Animated counter for stats
+    function animateCounter(element) {
+      const target = parseInt(element.getAttribute('data-target'));
+      const duration = 2000;
+      const increment = target / (duration / 16);
+      let current = 0;
+
+      const timer = setInterval(() => {
+        current += increment;
+        if (current >= target) {
+          element.textContent = target;
+          clearInterval(timer);
+        } else {
+          element.textContent = Math.floor(current);
+        }
+      }, 16);
+    }
+
+    // Intersection Observer for counter animation
+    const observerOptions = {
+      threshold: 0.5
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const counters = entry.target.querySelectorAll('.stat-number');
+          counters.forEach(counter => {
+            if (counter.textContent === '0') {
+              animateCounter(counter);
+            }
+          });
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    const statsSection = document.querySelector('.stats-section');
+    if (statsSection) {
+      observer.observe(statsSection);
+    }
+  </script>
+</body>
+</html>

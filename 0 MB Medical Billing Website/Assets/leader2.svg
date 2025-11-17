@@ -1,0 +1,31 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E74C3C;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#C0392B;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background Circle -->
+  <circle cx="60" cy="60" r="60" fill="url(#bgGradient2)"/>
+  
+  <!-- Person Icon -->
+  <g transform="translate(60, 60)">
+    <!-- Head -->
+    <circle cx="0" cy="-15" r="12" fill="white" opacity="0.9"/>
+    
+    <!-- Hair -->
+    <path d="M -12 -27 Q 0 -30 12 -27 Q 15 -20 12 -15 Q 8 -18 0 -18 Q -8 -18 -12 -15 Q -15 -20 -12 -27 Z" 
+          fill="white" opacity="0.7"/>
+    
+    <!-- Body -->
+    <path d="M -18 10 Q -18 0 -12 0 L 12 0 Q 18 0 18 10 L 18 25 Q 18 30 12 30 L -12 30 Q -18 30 -18 25 Z" 
+          fill="white" opacity="0.9"/>
+    
+    <!-- Necklace -->
+    <circle cx="0" cy="5" r="2" fill="#C0392B"/>
+  </g>
+  
+  <!-- Name Initial -->
+  <text x="60" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">HN</text>
+</svg>
