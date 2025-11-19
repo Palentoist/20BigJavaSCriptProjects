@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Comfortaa:wght@300..700&family=Kaushan+Script&family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&display=swap');
 html {
   box-sizing: border-box;
 }
@@ -9,17 +10,35 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  font-family: Spartan , sans-serif;
   font-size: 12px;
 }
 
+.player-container
+{
+  height: 500px;
+  width: 400px;
+  background: #e7e7e7;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px 5px rgba(0, 0, 0, 0.3);
+}
 
 
 .img-container {
-
+  height: 300px;
+  width: 300px;
   position: relative;
   top: -50px;
   left: 50px;
+}
+
+.img-container img
+{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -37,7 +56,8 @@ h3 {
 }
 
 /* Progress */
-.progress-container {
+.progress-container 
+{
   background: #fff;
   border-radius: 5px;
   cursor: pointer;
@@ -74,10 +94,14 @@ h3 {
   font-size: 30px;
   color: rgb(129, 129, 129);
   margin-right: 30px;
-
+  cursor: pointer;
+  user-select: none;
 }
 
-
+.fas:hover
+{
+  filter: brightness(80%);
+}
 
 .main-button {
   font-size: 40px;
@@ -85,9 +109,12 @@ h3 {
   top: 3px;
 }
 
-/* Media Query: iPhone (Vertical) */
-@media screen and (max-width: 376px) {
-
+@media screen and (max-width: 376px) 
+{
+  .player-container
+  {
+    width: 95vw;
+  }
 
   .img-container {
     left: 29px;
