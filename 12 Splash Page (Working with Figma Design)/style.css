@@ -1,9 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Comfortaa:wght@300..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Kaushan+Script&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Sen:wght@400..800&display=swap');
 
-
-html {
+html 
+{
   box-sizing: border-box;
 }
 
-body {
+body 
+{
   margin: 0;
+  overflow-x: hidden;
+  font-family: Lato , sans-serif;
+  color: #54575A;
+  background: linear-gradient(180deg , #FFFFFF 0% , #F3F8F7 49.91% , #FFF9F5 94.19%);
 }
+
+.wrapper
+{
+  position: relative;
+  width: 1440px;
+  min-height: 100vh;
+  margin: auto;
+}
+
+.brand-img
+{
+  position: absolute;
+  width: 193px;
+  height: 47.64px;
+  left: 221px;
+  top: 50.25px;
+}
+
+.title
+{
+  position: absolute;
+  width: 458px;
+  height: 135px;
+  left: 221px;
+  top: 236px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 67px;
+}
+
+.text
+{
+  position: absolute;
+  width: 394px;
+  height: 96px;
+  left: 221px;
+  top: 403px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.app-store-btn
+{
+  position: absolute;
+  width: 138.44px;
+  height: 46.28;
+  left: 221px;
+  top: 531px;
+}
+
+.app-store-btn img
+{
+  width: 138.44px;
+  height: 46.28;
+}
+
+.google-play-btn
+{
+  position: absolute;
+  width: 156.19px;
+  height: 46.28px;
+  left: 381.81px;
+  top: 531px;
+}
+
+/* We Would be back after some time , Wait for me bruh */
