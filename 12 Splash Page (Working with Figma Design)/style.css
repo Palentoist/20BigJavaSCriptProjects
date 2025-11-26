@@ -1,29 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Comfortaa:wght@300..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Kaushan+Script&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Sen:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=Bebas+Neue&family=Comfortaa:wght@300..700&family=Karla:ital,wght@200..800;1,200..800&family=Kaushan+Script&family=Lato:wght@100;300;400;700;900&family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@100..900;1,100..900&family=Nunito:ital,wght@200..1000;1,200..1000&family=Oswald:wght@200..700&family=Sen:wght@400..800&display=swap');
 
-html 
-{
+html {
   box-sizing: border-box;
 }
 
-body 
-{
+body {
   margin: 0;
   overflow-x: hidden;
-  font-family: Lato , sans-serif;
+  font-family: Lato, sans-serif;
   color: #54575A;
-  background: linear-gradient(180deg , #FFFFFF 0% , #F3F8F7 49.91% , #FFF9F5 94.19%);
+  background: linear-gradient(180deg, #FFFFFF 0%, #F3F8F7 49.91%, #FFF9F5 94.19%);
+  transition: background 0.4s ease;
 }
 
-.wrapper
-{
+.wrapper {
   position: relative;
   width: 1440px;
   height: 1379px;
   margin: auto;
 }
 
-.brand-img
-{
+.brand-img {
   position: absolute;
   width: 193px;
   height: 47.64px;
@@ -31,8 +28,7 @@ body
   top: 50.25px;
 }
 
-.title
-{
+.title {
   position: absolute;
   width: 458px;
   height: 135px;
@@ -44,36 +40,30 @@ body
   line-height: 67px;
 }
 
-.text
-{
+.text {
   position: absolute;
   width: 394px;
   height: 96px;
   left: 221px;
   top: 403px;
-  font-style: normal;
-  font-weight: normal;
   font-size: 20px;
   line-height: 32px;
 }
 
-.app-store-btn
-{
+.app-store-btn {
   position: absolute;
   width: 138.44px;
-  height: 46.28;
+  height: 46.28px;
   left: 221px;
   top: 531px;
 }
 
-.app-store-btn img
-{
+.app-store-btn img {
   width: 138.44px;
-  height: 46.28;
+  height: 46.28px;
 }
 
-.google-play-btn
-{
+.google-play-btn {
   position: absolute;
   width: 156.19px;
   height: 46.28px;
@@ -81,14 +71,12 @@ body
   top: 531px;
 }
 
-.google-play-btn img
-{
+.google-play-btn img {
   width: 156.19px;
   height: 46.28px;
 }
 
-.main-image-container
-{
+.main-image-container {
   position: absolute;
   width: 535.72px;
   height: 309.27px;
@@ -96,57 +84,47 @@ body
   top: 229.73px;
 }
 
-.main-image-container img
-{
+.main-image-container img {
   height: 411.15px;
 }
 
-.profile-img
-{
+.profile-img {
   position: absolute;
   height: 444px;
   left: 737px;
-  right: 479px;
   top: 686px;
 }
 
-.orders-img
-{
+.orders-img {
   position: absolute;
   height: 470px;
   left: 479px;
-  right: 737px;
   top: 913px;
 }
-.cart-img
-{
+
+.cart-img {
   position: absolute;
   height: 222px;
   left: 221px;
-  right: 995px;
   top: 1157px;
 }
 
-.home-img
-{
+.home-img {
   position: absolute;
   height: 470px;
   left: 995px;
-  right: 221px;
   top: 908px;
 }
 
-/* Background Toggles */
-.background-toggles
-{
+/* Background Toggle Buttons */
+.background-toggles {
   position: absolute;
   right: 150px;
   top: 70px;
   display: flex;
 }
 
-.background-toggles > div 
-{
+.background-toggles>div {
   height: 25px;
   width: 25px;
   border-radius: 5px;
@@ -155,23 +133,16 @@ body
   cursor: pointer;
 }
 
-/* Backgrounds */
-.background-1
-{
-  background-color: #f2f2f2;
+/* Background styles applied TO BODY */
+body.background-1 {
+  background-color: #f2f2f2 !important;
   background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23b8b8b8' fill-opacity='0.26' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E");
 }
 
-.background-2
-{
-  background: #ADA996;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+body.background-2 {
+  background: linear-gradient(to bottom, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996) !important;
 }
 
-.background-3
-{
-  background: #8e9eab;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+body.background-3 {
+  background: linear-gradient(to bottom, #eef2f3, #8e9eab) !important;
 }
